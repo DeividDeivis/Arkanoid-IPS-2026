@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 9170059835575066160}
   - component: {fileID: 8982226532032337476}
   - component: {fileID: 1049336642602489634}
+  - component: {fileID: 6985676664871243148}
   m_Layer: 0
   m_Name: Brick
-  m_TagString: Untagged
+  m_TagString: Brick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -112,3 +113,16 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &6985676664871243148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8681278993818693426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5128ac0a02a08d4489d947837aef94c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BrickController
+  player: {fileID: 0}

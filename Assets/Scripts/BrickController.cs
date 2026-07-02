@@ -1,27 +1,15 @@
+using System;
 using UnityEngine;
 
 public class BrickController : MonoBehaviour
 {
-    [SerializeField] private PlayerController player;
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        player = FindFirstObjectByType<PlayerController>();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public static Action OnBallCollision;
 
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.transform.tag == "Ball") 
         {
-            player.AddPoint();
-            //Destroy(gameObject);
+            OnBallCollision?.Invoke();
             gameObject.SetActive(false);
         }      
     }
